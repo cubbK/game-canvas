@@ -1,16 +1,30 @@
+import Items from './items';
+import Basket from './Basket'
 
-class Elev {
-    constructor(public name: string, public mark:number, public isAddmited: boolean) {}
-
-    public showFormated () {
-        const text = `
-        Nume: ${this.name}
-        Nota: ${this.mark}
-        Admis: ${this.isAddmited}
-        `
-        console.log(text)
-    }
-}
-
-const elev1 = new Elev ('Petru', 2, true)
-elev1.showFormated()
+document.addEventListener("DOMContentLoaded", () => {
+    const products = [
+        {   
+            id: 0,
+            name: "Apple",
+            price: 20
+        },
+        {
+            id: 1,
+            name: "Banana",
+            price: 210
+        },
+        {
+            id: 2,
+            name: "Lemon",
+            price: 2
+        },
+        {
+            id: 3,
+            name: "Gasfdsf",
+            price: 5
+        },
+    ];
+    
+    const items = new Items(products)
+    const basket = new Basket()
+});

@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.container > ul {
+    padding: 0 10px;
+}
+.container li {
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.container li:hover {
+    background-color: #fafafa;
+}
